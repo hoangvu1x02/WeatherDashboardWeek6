@@ -1,10 +1,11 @@
 const appId = 'b5549a686c6b529bb09daf56625f3809';
 
 const alertUserFailedAPI = function() {
-	alert("Hey, something went wrong with API. Please try again later");
+	$("#error").show();
 }
 
 $("#search-btn").click(function() {
+	$("#error").hide();
 	const searchValue = $("#city-search-input").val();
 
 	$("#main-content").fadeOut(400, function() {
