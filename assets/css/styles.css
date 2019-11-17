@@ -20,6 +20,10 @@ body {
     flex-grow: 9999;
 }
 
+#error {
+	display: none;
+}
+
 #sidebar {
     background-color: lightgrey;
     padding: 20px;
