@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="./assets/css/styles.css">
+	<title>My Weather Dashboard</title>
+</head>
+<body>
+	<div id="header">My Weather Dashboard</div>
+	<div id="page-content">
+		<div id="sidebar">
+			<div id="sidebar-title">Search for a City:</div>
+			<input type="text" id="city-search-input" />
+			<button id="search-btn">Search</button>
+		</div>
+		<div id="main-content">
+			<div id="current-condition">
+				<h1><span class="city-name">Atlanta</span> (<span class="today">17/11/2019</span>)</h1>
+				<img src="https://via.placeholder.com/30" alt="weather icon">
+				<div>Temperature: <span class="current-temper">38</span></div>
+				<div>Humidity: <span class="current-humidity">38</span></div>
+				<div>Wind Speed: <span class="current-wind-speed">38</span></div>
+				<div>UV Index: <span class="current-uv-index">38</span></div>
+			</div>
+			<div id="five-days-forecast">
+				<h1>5 Days forecast</h1>
+				<div class="weather-forecast" id="forecast-to-be-cloned">
+					<h2 class="forecast-date"></h2>
+					<img src="https://via.placeholder.com/30" alt="weather icon">
+					<div>Temp: <span class="forecast-temp"></span></div>
+					<div>Humidity: <span class="forecast-humidity"></span></div>
+				</div>
+				<div id="forecast-container"></div>
+			</div>
+		</div>
+	</div>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js" integrity="sha256-4iQZ6BVL4qNKlQ27TExEhBN1HFPvAvAMbFavKKosSWQ=" crossorigin="anonymous"></script>
+	<script src="./assets/js/scripts.js"></script>
+</body>
+</html>
