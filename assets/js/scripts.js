@@ -1,7 +1,7 @@
 const appId = 'b5549a686c6b529bb09daf56625f3809';
 
 const alertUserFailedAPI = function() {
-	alert("Hey, something went wrong with API. Please try again later");
+	alert("Hey, something went wrong with API. Can you please try again after a while?");
 }
 
 $("#search-btn").click(function() {
